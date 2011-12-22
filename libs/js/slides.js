@@ -533,6 +533,7 @@ function addPrettify() {
     }
   }
   
+  /*
   var el = document.createElement('script');
   el.type = 'text/javascript';
   el.src = PERMANENT_URL_PREFIX + 'libs/js/prettify.js';
@@ -540,9 +541,11 @@ function addPrettify() {
     prettyPrint();
   }
   document.body.appendChild(el);
+  */
 };
 
 function addFontStyle() {
+  /*
   var el = document.createElement('link');
   el.rel = 'stylesheet';
   el.type = 'text/css';
@@ -550,15 +553,18 @@ function addFontStyle() {
             'Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono';
 
   document.body.appendChild(el);
+  */
 };
 
 function addGeneralStyle() {
+  /*
   var el = document.createElement('link');
   el.rel = 'stylesheet';
   el.type = 'text/css';
   el.href = PERMANENT_URL_PREFIX + 'libs/css/slideshow.css';
-  document.body.appendChild(el);
-  
+  document.head.appendChild(el);
+  */
+
   var el = document.createElement('meta');
   el.name = 'viewport';
   el.content = 'width=1100,height=750';
